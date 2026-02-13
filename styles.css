@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+    background-image: url(images/chickensbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Lower Pixel";
+    font-size: larger;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 1010% 1010%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.navbar {
+    background-color: black;
+    list-style: none;
+    height: 160px;
+    width: 100%;
+    display: inline-block;
+    margin: -40px;
+    line-height: 200px;
+    z-index: -1;
+    padding-right: 50px;
+    padding-left: 80px;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: deeppink;
+    text-decoration: none;
+}
+.morefix {
+    position: relative;
+    top: -75px;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+button {
+    background-color: transparent;
+    border: transparent 0px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;    
+    position: sticky;
+    opacity: 0.5;
+}
+h2.collapse {
+    position: sticky;
+}
+.tile {
+    width: 800px;
+}
+.tilecovers:before {
+    content:'\A';
+    position:absolute;
+    width:785px; height:200px;
+    top:-205; left:-800px;
+    background:pink;
+    opacity:0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.tilecovers:before {
+    opacity:0;
+}
+.tilecovers:hover:before {
+    opacity:0.3;
+    cursor: pointer;
+}
+@font-face {
+  font-family: Lower Pixel;
+  src: url(fonts/lower-pixel/LowresPixel-Regular.otf);
+}
+.top {
+    position: relative;
+    top: -50px;
+    margin-left: -60px;
+}
+.topp {
+    position: relative;
+    margin-left: -60px;
+    top: -230px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bottom {
+    background-color: black;
+    list-style: none;
+    height: 170px;
+    width: 100%;
+    display: inline-block;
+    line-height: 200px;
+    z-index: -1;
+    position: absolute;
+    bottom: -900px;
+    left: 0;
+}
+.ssbubanner {
+    width: 100%;
+}
+.small {
+    font-size: smaller;
+}
+.mkbanner {
+    height: 300px;
+}
+.sf6banner {
+    height: 300px;
+}
+.tkbanner {
+    height: 300px;
+}
+.owbanner {
+    height: 300px;
+}

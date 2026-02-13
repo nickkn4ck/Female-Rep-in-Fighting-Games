@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Female Rep in Fighting Games</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header class="navbar">
+            <h1 class=top>Female Representation in Popular Fighting Games</h1>
+            <p class=topp>Website by <a class="bottomlink" target="_blank" href="https://www.instagram.com/nicklaporte1?igsh=MWVpbjBpZG41eTJ0eQ%3D%3D&utm_source=qr">Nick LaPorte</a><br></p>
+        </header>
+        <div class="mainb"><br><br><br>
+            <img class="tile" src="images/tekkentile.png">
+                <button type="button" class="collapsible"><div class="tilecovers"></div></button>
+                <div class="content"><br>Out of 32 original main fighters, 11 are female. That's 34%.<br><br>
+                    <img class="tkbanner" src="images/tekkengenders1.png"><br><br><br></div>
+            <img class="tile" src="images/supersmashtile.png">
+                <button type="button" class="collapsible"><div class="tilecovers"></div></button>
+                <div class="content"><br>Out of 86 main fighters, 14 are (only) female. That's 16%.<br>
+                    In their original games, a vast majority of the female characters are love interests <br>
+                    or support, while the male fighters are mostly protagonists and heroes.<br>
+                    <p class="small">Note: The banner also depicts female characters that are part of a pair with a male<br>
+                    character, while the statistic does not count those characters.</p><br>
+                    <img class="ssbubanner" src="images/ssbugenders1.png"><br><br><br></div>
+            <img class="tile" src="images/mortalkombattile.png">
+                <button type="button" class="collapsible"><div class="tilecovers"></div></button>
+                <div class="content"><br>Out of 37 main fighters, 12 are female. That's 32%.<br>
+                    While they have improved in recent games, the female characters' designs are widely <br>
+                    criticized for their revealing, unprotective, and constricting nature.<br><br>
+                    <img class="mkbanner" src="images/mkgenders1.png"><br><br><br></div>
+            <img class="tile" src="images/streetfightertile.png">
+                <button type="button" class="collapsible"><div class="tilecovers"></div></button>
+                <div class="content"><br>Out of 18 main fighters, 8 are female. That's 44%.<br>
+                    Chun-Li, introduced in Street Fighter II, is known as the first playable female <br>
+                    character in a popular one-on-one fighting game.<br><br>
+                    <img class="sf6banner" src="images/sf6genders1.png"><br><br><br></div>
+            <img class="tile" src="images/overwatchtile.png">
+                <button type="button" class="collapsible"><div class="tilecovers"></div></button>
+                <div class="content"><br>Out of 35 original main fighters, 18 are female. That's 51%.<br>
+                    Although the number of female and male fighters are balanced, female characters<br>
+                    are mostly support types, and male characters are mostly tank types.<br><br>
+                    <img class="owbanner" src="images/owgenders1.png"><br><br><br></div>
+            </i></div>
+        <br><br><br>
+        <div class="bottom" style="opacity: 0;">
+            <p class=bot>Website by <a class="bottomlink" target="_blank" href="https://www.instagram.com/nicklaporte1?igsh=MWVpbjBpZG41eTJ0eQ%3D%3D&utm_source=qr">Nick LaPorte</a><br></p>
+        </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+    </body>
+</html>
